@@ -1,4 +1,4 @@
-const Logo = ({ height, width }: { height: number; width: number }) => {
-  return <img src="/img/logo.png" alt="logo" height={height} width={width} />;
+const Logo = ({ src, height, width }: { src: string, height: number; width: number }) => {
+  return <img src={src} alt="logo" height={height} width={width} />;
 };
 export default Logo;

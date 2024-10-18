@@ -10,17 +10,21 @@ export default {
   "navbar.avatar.admin": "Beheer",
   "navbar.avatar.signout": "Afmelden",
   // END navbar
+  // FOOTER
+  "footer.links.copyrigth": `${new Date().getFullYear()} Hektor + Rydzewski GmbH`,
+  "footer.links.privacy": "Gegevensbescherming",
+  "footer.links.terms": "Gebruiksvoorwaarden",
+  "footer.links.imprint": "Imprint",
+  // END FOOTER/
   // /
-  "home.title": "Een <h>zelfgehost</h> platform voor het delen van bestanden.",
-  "home.description": "Wil je echt je persoonlijke bestanden geven aan derden zoals WeTransfer?",
-  "home.bullet.a.name": "Zelfgehost",
-  "home.bullet.a.description": "Host Pingvin Share op uw eigen machine.",
-  "home.bullet.b.name": "Privacy",
-  "home.bullet.b.description": "Uw bestanden zijn van u en mogen nooit in handen komen van derden.",
-  "home.bullet.c.name": "Geen vervelende limiet voor bestandsgrootte",
-  "home.bullet.c.description": "Upload zo grote bestanden als je wilt. Alleen je harde schijf is je limiet.",
-  "home.button.start": "Aan de slag",
-  "home.button.source": "Broncode",
+  "home.title": "Media-Manager",
+  "home.description": "Log in met je persoonlijke toegangsgegevens onder \"Aanmelden\" om de Media-Manager te gebruiken. Als je nog geen account hebt, kun je ons hier een registratieaanvraag sturen.",
+  "home.request.signup.firstname": "Voornaam",
+  "home.request.signup.lastname": "Achternaam",
+  "home.request.signup.email": "E-mail",
+  "home.request.signup.firstname.placeholder": "Uw voornaam",
+  "home.request.signup.lastname.placeholder": "Uw achternaam",
+  "home.request.signup.email.placeholder": "Uw e-mail",
   // END /
   // /auth/signin
   "signin.title": "Welkom terug",

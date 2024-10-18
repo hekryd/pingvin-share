@@ -10,17 +10,22 @@ export default {
   "navbar.avatar.admin": "Verwaltung",
   "navbar.avatar.signout": "Abmelden",
   // END navbar
+  // FOOTER
+  "footer.links.copyrigth": `${new Date().getFullYear()} Hektor + Rydzewski GmbH`,
+  "footer.links.privacy": "Datenschutz",
+  "footer.links.terms": "Nutzungsbedingungen",
+  "footer.links.imprint": "Impressum",
+  // END FOOTER
   // /
-  "home.title": "Eine <h>selbst gehostete</h> Dateifreigabe-Plattform.",
-  "home.description": "Möchtest du wirklich deine persönlichen Dateien an Drittanbieter wie WeTransfer weitergeben?",
-  "home.bullet.a.name": "Selbst gehostet",
-  "home.bullet.a.description": "Betreibe Pingvin Share auf deinem eigenen Server.",
-  "home.bullet.b.name": "Privatsphäre",
-  "home.bullet.b.description": "Deine Dateien gehören dir und sollten niemals in die Hände Dritter gelangen.",
-  "home.bullet.c.name": "Keine lästige Dateigrößenbegrenzung",
-  "home.bullet.c.description": "Lade Dateien beliebiger Größe hoch. Nur dein Festplattenspeicher stellt die Grenze dar.",
-  "home.button.start": "Lege los",
-  "home.button.source": "Quellcode",
+  "home.title": "Medien-Manager.",
+  "home.description": "Melden Sie sich mit Ihren persönlichen Zugangsdaten unter \"Anmelden\" an, um den Medien-Manager zu nutzen. Sollten Sie noch kein Konto besitzen, können Sie hier eine Anfrage für eine Registrierung an uns senden.",
+  "home.request.signup": "Registrierung anfragen",
+  "home.request.signup.firstname": "Vorname",
+  "home.request.signup.lastname": "Nachname",
+  "home.request.signup.email": "E-Mail",
+  "home.request.signup.firstname.placeholder": "Ihr Vorname",
+  "home.request.signup.lastname.placeholder": "Ihr Nachname",
+  "home.request.signup.email.placeholder": "Ihre E-Mail",
   // END /
   // /auth/signin
   "signin.title": "Willkommen zurück",

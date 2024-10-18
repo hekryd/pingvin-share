@@ -1,32 +1,30 @@
+import * as yup from "yup";
 import {
   Anchor,
   Button,
   Container,
-  createStyles,
   Group,
-  Loader,
   Paper,
   PasswordInput,
   Stack,
   Text,
   TextInput,
   Title,
+  createStyles,
 } from "@mantine/core";
-import { useForm, yupResolver } from "@mantine/form";
-import { showNotification } from "@mantine/notifications";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { TbInfoCircle } from "react-icons/tb";
-import { FormattedMessage } from "react-intl";
-import * as yup from "yup";
-import useConfig from "../../hooks/config.hook";
-import useUser from "../../hooks/user.hook";
-import useTranslate from "../../hooks/useTranslate.hook";
-import authService from "../../services/auth.service";
 import { getOAuthIcon, getOAuthUrl } from "../../utils/oauth.util";
-import { safeRedirectPath } from "../../utils/router.util";
+import { useForm, yupResolver } from "@mantine/form";
+import { FormattedMessage } from "react-intl";
+import Link from "next/link";
+import React from "react";
+import { TbInfoCircle } from "react-icons/tb";
+import authService from "../../services/auth.service";
+import { showNotification } from "@mantine/notifications";
 import toast from "../../utils/toast.util";
+import useConfig from "../../hooks/config.hook";
+import { useRouter } from "next/router";
+import useTranslate from "../../hooks/useTranslate.hook";
+import useUser from "../../hooks/user.hook";
 
 const useStyles = createStyles((theme) => ({
   signInWith: {

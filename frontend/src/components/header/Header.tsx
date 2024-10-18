@@ -2,26 +2,25 @@ import {
   Box,
   Burger,
   Container,
-  createStyles,
   Group,
   Header as MantineHeader,
   Paper,
   Stack,
-  Text,
   Transition,
+  createStyles,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import { ReactNode, useEffect, useState } from "react";
-import useConfig from "../../hooks/config.hook";
-import useUser from "../../hooks/user.hook";
-import useTranslate from "../../hooks/useTranslate.hook";
-import Logo from "../Logo";
 import ActionAvatar from "./ActionAvatar";
+import Link from "next/link";
+import Logo from "../Logo";
 import NavbarShareMenu from "./NavbarShareMenu";
+import useConfig from "../../hooks/config.hook";
+import { useDisclosure } from "@mantine/hooks";
+import { useRouter } from "next/router";
+import useTranslate from "../../hooks/useTranslate.hook";
+import useUser from "../../hooks/user.hook";
 
-const HEADER_HEIGHT = 60;
+const HEADER_HEIGHT = 100;
 
 type NavLink = {
   link?: string;
@@ -141,6 +140,10 @@ const Header = () => {
       link: "/auth/signIn",
       label: t("navbar.signin"),
     },
+    {
+      link: "https://www.hektor-rydzewski.de/",
+      label: "Hektor-Rydzewski",
+    },
   ];
 
   if (config.get("share.allowUnauthenticatedShares")) {
@@ -193,8 +196,7 @@ const Header = () => {
       <Container className={classes.header}>
         <Link href="/" passHref>
           <Group>
-            <Logo height={35} width={35} />
-            <Text weight={600}>{config.get("general.appName")}</Text>
+            <Logo src={"/img/logo.png"} height={30} width={120} />
           </Group>
         </Link>
         <Group spacing={5} className={classes.links}>

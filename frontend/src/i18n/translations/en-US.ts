@@ -13,22 +13,22 @@ export default {
   "navbar.avatar.signout": "Sign out",
   // END navbar
 
+  // FOOTER
+  "footer.links.copyrigth": `${new Date().getFullYear()} Hektor + Rydzewski GmbH`,
+  "footer.links.privacy": "Data protection",
+  "footer.links.terms": "Terms of use",
+  "footer.links.imprint": "Imprint",
+  // END FOOTER/
+
   // /
-  "home.title": "A <h>self-hosted</h> file sharing platform.",
-
-  "home.description":
-    "Do you really want to give your personal files in the hand of third parties like WeTransfer?",
-  "home.bullet.a.name": "Self-Hosted",
-  "home.bullet.a.description": "Host Pingvin Share on your own machine.",
-  "home.bullet.b.name": "Privacy",
-  "home.bullet.b.description":
-    "Your files are your files and should never get into the hands of third parties.",
-  "home.bullet.c.name": "No annoying file size limit",
-  "home.bullet.c.description":
-    "Upload as big files as you want. Only your hard drive will be your limit.",
-
-  "home.button.start": "Get started",
-  "home.button.source": "Source code",
+  "home.title": "Media-Manager",
+  "home.description": "Log in with your personal access data under \"Login\" to use the Media-Manager. If you do not have an account yet, you can send us a registration enquiry here.",
+  "home.request.signup.firstname": "First name",
+  "home.request.signup.lastname": "Last name",
+  "home.request.signup.email": "Email",
+  "home.request.signup.firstname.placeholder": "Your first name",
+  "home.request.signup.lastname.placeholder": "Your last name",
+  "home.request.signup.email.placeholder": "Your email",
   // END /
 
   // /auth/signin

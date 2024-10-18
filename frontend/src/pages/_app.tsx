@@ -4,33 +4,32 @@ import {
   Container,
   MantineProvider,
 } from "@mantine/core";
-import { useColorScheme } from "@mantine/hooks";
+import { getCookie, setCookie } from "cookies-next";
+import { useEffect, useRef, useState } from "react";
+import type { AppProps } from "next/app";
+import Config from "../types/config.type";
+import { ConfigContext } from "../hooks/config.hook";
+import { CurrentUser } from "../types/user.type";
+import Footer from "../components/footer/Footer";
+import { GetServerSidePropsContext } from "next";
+import GlobalStyle from "../styles/global.style";
+import Head from "next/head";
+import Header from "../components/header/Header";
+import { IntlProvider } from "react-intl";
+import { LOCALES } from "../i18n/locales";
 import { ModalsProvider } from "@mantine/modals";
 import { Notifications } from "@mantine/notifications";
-import axios from "axios";
-import { getCookie, setCookie } from "cookies-next";
-import { GetServerSidePropsContext } from "next";
-import type { AppProps } from "next/app";
-import getConfig from "next/config";
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
-import { IntlProvider } from "react-intl";
-import Header from "../components/header/Header";
-import { ConfigContext } from "../hooks/config.hook";
 import { UserContext } from "../hooks/user.hook";
-import { LOCALES } from "../i18n/locales";
 import authService from "../services/auth.service";
+import axios from "axios";
 import configService from "../services/config.service";
-import userService from "../services/user.service";
-import GlobalStyle from "../styles/global.style";
+import getConfig from "next/config";
 import globalStyle from "../styles/mantine.style";
-import Config from "../types/config.type";
-import { CurrentUser } from "../types/user.type";
 import i18nUtil from "../utils/i18n.util";
+import { useColorScheme } from "@mantine/hooks";
+import { useRouter } from "next/router";
 import userPreferences from "../utils/userPreferences.util";
-import "moment/min/locales";
-import moment from "moment";
+import userService from "../services/user.service";
 
 const excludeDefaultLayoutRoutes = ["/admin/config/[category]"];
 
@@ -139,6 +138,7 @@ function App({ Component, pageProps }: AppProps) {
                       <Container>
                         <Component {...pageProps} />
                       </Container>
+                      <Footer />
                     </>
                   )}
                 </UserContext.Provider>
