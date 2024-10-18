@@ -34,7 +34,7 @@ import userService from "../services/user.service";
 const excludeDefaultLayoutRoutes = ["/admin/config/[category]"];
 
 function App({ Component, pageProps }: AppProps) {
-  const systemTheme = useColorScheme(pageProps.colorScheme);
+  const systemTheme = "light";
   const router = useRouter();
 
   const [colorScheme, setColorScheme] = useState<ColorScheme>(systemTheme);
@@ -103,7 +103,7 @@ function App({ Component, pageProps }: AppProps) {
         <MantineProvider
           withGlobalStyles
           withNormalizeCSS
-          theme={{ colorScheme, ...globalStyle }}
+          theme={{ colorScheme, ...globalStyle, fontFamily: "Trebuchet MS, Helvetica, sans-serif" }}
         >
           <ColorSchemeProvider
             colorScheme={colorScheme}

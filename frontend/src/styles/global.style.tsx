@@ -4,6 +4,9 @@ const GlobalStyle = () => {
   return (
     <Global
       styles={(theme) => ({
+        body:{
+          fontFamily: "Trebuchet MS, Helvetica, sans-serif !important",
+        },
         a: {
           color: "inherit",
           textDecoration: "none",
