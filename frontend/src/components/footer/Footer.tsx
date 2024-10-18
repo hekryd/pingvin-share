@@ -68,7 +68,7 @@ const useStyles = createStyles((theme) => ({
     const { classes, cx } = useStyles();
     let footerLinks: NavLink[] = [
       {
-        link: "/",
+        link: "https://www.hektor-rydzewski.de/rechtliches/datenschutz.php",
         label: t("footer.links.privacy"),
       },
       {
@@ -76,7 +76,7 @@ const useStyles = createStyles((theme) => ({
         label: t("footer.links.terms"),
       },
       {
-        link: "/",
+        link: "https://www.hektor-rydzewski.de/rechtliches/impressum.php",
         label: t("footer.links.imprint"),
       },
     ];
