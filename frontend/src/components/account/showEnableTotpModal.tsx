@@ -18,7 +18,6 @@ import useTranslate, {
 } from "../../hooks/useTranslate.hook";
 import authService from "../../services/auth.service";
 import toast from "../../utils/toast.util";
-
 const showEnableTotpModal = (
   modals: ModalsContextProps,
   refreshUser: () => {},
@@ -69,70 +68,7 @@ const CreateEnableTotpModal = ({
 
   return (
     <div>
-      <Center>
-        <Stack>
-          <Text>
-            <FormattedMessage id="account.modal.totp.step1" />
-          </Text>
-          <Image src={options.qrCode} alt="QR Code" />
 
-          <Center>
-            <span>
-              {" "}
-              <FormattedMessage id="common.text.or" />
-            </span>
-          </Center>
-
-          <Tooltip label={t("common.button.clickToCopy")}>
-            <Button
-              onClick={() => {
-                navigator.clipboard.writeText(options.secret);
-                toast.success("Copied to clipboard");
-              }}
-            >
-              {options.secret}
-            </Button>
-          </Tooltip>
-          <Center>
-            <Text fz="xs"></Text>
-          </Center>
-
-          <Text>
-            <FormattedMessage id="account.modal.totp.step2" />
-          </Text>
-
-          <form
-            onSubmit={form.onSubmit((values) => {
-              authService
-                .verifyTOTP(values.code, options.password)
-                .then(() => {
-                  toast.success(t("account.notify.totp.enable"));
-                  modals.closeAll();
-                  refreshUser();
-                })
-                .catch(toast.axiosError);
-            })}
-          >
-            <Group align="end">
-              <TextInput
-                style={{ flex: "1" }}
-                variant="filled"
-                label={t("account.modal.totp.code")}
-                placeholder="******"
-                {...form.getInputProps("code")}
-              />
-
-              <Button
-                style={{ flex: "0 0 auto" }}
-                variant="outline"
-                type="submit"
-              >
-                <FormattedMessage id="account.modal.totp.verify" />
-              </Button>
-            </Group>
-          </form>
-        </Stack>
-      </Center>
     </div>
   );
 };

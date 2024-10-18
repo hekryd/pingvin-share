@@ -61,7 +61,7 @@ const Body = ({
       maxShareSize: 104857600,
       maxUseCount: 1,
       sendEmailNotification: false,
-      expiration_num: 1,
+      expiration_num: 7,
       expiration_unit: "-days",
       simplified: !!(getCookie("reverse-share.simplified") ?? false),
       publicAccess: !!(getCookie("reverse-share.public-access") ?? true),
@@ -127,7 +127,7 @@ const Body = ({
             <Grid align={form.errors.expiration_num ? "center" : "flex-end"}>
               <Col xs={6}>
                 <NumberInput
-                  min={1}
+                  min={167}
                   max={99999}
                   precision={0}
                   variant="filled"
@@ -209,7 +209,7 @@ const Body = ({
             onChange={(number) => form.setFieldValue("maxShareSize", number)}
           />
           <NumberInput
-            min={1}
+            min={167}
             max={1000}
             precision={0}
             variant="filled"
