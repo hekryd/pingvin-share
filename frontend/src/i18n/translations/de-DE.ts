@@ -18,7 +18,7 @@ export default {
   // END FOOTER
   // /
   "home.title": "Medien-Manager.",
-  "home.description": "Melden Sie sich mit Ihren persönlichen Zugangsdaten unter \"Anmelden\" an, um den Medien-Manager zu nutzen. Sollten Sie noch kein Konto besitzen, können Sie hier eine Anfrage für eine Registrierung an uns senden.",
+  "home.description": "Melden Sie sich mit Ihren persönlichen Zugangsdaten unter \"Anmelden\" an, um den Medien-Manager zu nutzen. Sollten Sie noch kein Konto besitzen, können Sie hier eine Anfrage per E-Mail an post@hektor-rydzewski.de für eine Registrierung senden.",
   "home.request.signup": "Registrierung anfragen",
   "home.request.signup.firstname": "Vorname",
   "home.request.signup.lastname": "Nachname",

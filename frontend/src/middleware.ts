@@ -1,6 +1,7 @@
-import { jwtDecode } from "jwt-decode";
 import { NextRequest, NextResponse } from "next/server";
+
 import configService from "./services/config.service";
+import { jwtDecode } from "jwt-decode";
 
 // This middleware redirects based on different conditions:
 // - Authentication state
@@ -70,7 +71,7 @@ export async function middleware(request: NextRequest) {
     // Unauthenticated state
     {
       condition: !user && !routes.public.contains(route) && !routes.unauthenticated.contains(route),
-      path: "/auth/signIn",
+      path: "/",
     },
     {
       condition: !user && routes.account.contains(route),

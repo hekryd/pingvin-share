@@ -7,11 +7,11 @@ import {
   Text,
   useMantineTheme,
 } from "@mantine/core";
-import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 import { FormattedMessage } from "react-intl";
-import useConfig from "../../../hooks/config.hook";
+import Link from "next/link";
 import Logo from "../../Logo";
+import useConfig from "../../../hooks/config.hook";
 
 const ConfigurationHeader = ({
   isMobileNavBarOpened,
@@ -37,7 +37,7 @@ const ConfigurationHeader = ({
         <Group position="apart" w="100%">
           <Link href="/" passHref>
             <Group>
-              <Logo height={35} width={35} />
+              <Logo src={"/img/logo.png"} height={20} width={80} />
               <Text weight={600}>{config.get("general.appName")}</Text>
             </Group>
           </Link>

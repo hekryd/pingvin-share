@@ -22,7 +22,7 @@ export default {
 
   // /
   "home.title": "Media-Manager",
-  "home.description": "Log in with your personal access data under \"Login\" to use the Media-Manager. If you do not have an account yet, you can send us a registration enquiry here.",
+  "home.description": "Log in with your personal access data under \"Login\" to use the Media-Manager. If you do not have an account yet, you can send an e-mail request for registration to post@hektor-rydzewski.de here.",
   "home.request.signup.firstname": "First name",
   "home.request.signup.lastname": "Last name",
   "home.request.signup.email": "Email",

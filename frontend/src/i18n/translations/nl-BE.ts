@@ -18,7 +18,7 @@ export default {
   // END FOOTER/
   // /
   "home.title": "Media-Manager",
-  "home.description": "Log in met je persoonlijke toegangsgegevens onder \"Aanmelden\" om de Media-Manager te gebruiken. Als je nog geen account hebt, kun je ons hier een registratieaanvraag sturen.",
+  "home.description": "Log in met je persoonlijke toegangsgegevens onder \"Login\" om de Media Manager te gebruiken. Als je nog geen account hebt, kun je hier een e-mailverzoek voor registratie sturen naar post@hektor-rydzewski.de.",
   "home.request.signup.firstname": "Voornaam",
   "home.request.signup.lastname": "Achternaam",
   "home.request.signup.email": "E-mail",
