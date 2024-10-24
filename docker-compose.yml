@@ -1,6 +1,7 @@
 services:
   pingvin-share:
-    image: stonith404/pingvin-share
+    build:
+      dockerfile: Dockerfile
     restart: unless-stopped
     ports:
       - 3000:3000
